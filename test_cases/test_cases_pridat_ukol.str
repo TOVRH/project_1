@@ -1,0 +1,54 @@
+TC01
+Popis: Přidání nového úkolu (název: Úkol 1 + popis: Popis pro úkol 1)
+Vstupní podmínky: Program zobrazuje funkci Přidat nový úkol.
+Kroky testu: 1.Spusťe program
+             2.Zadejte "1" a stiskněte klávesu 'Enter'
+             3.Zadejte název úkolu "Úkol 1" a stikněte klávesu 'Enter'
+             4.Zadejte popis úkolu "Popis úkolu 1" a stiskněte klávesu 'Enter'
+
+Očekáváný výsledek:
+Skutečný výsledek: Zobrazí se hláška Úkol 'Úkol 1' byl přidán.
+Stav: Pass
+Poznámky:
+
+
+TC01
+Popis: Přidání nového úkolu (prázný název + prázdný popis)
+Vstupní podmínky: Program zobrazuje funkci Přidat nový úkol.
+Kroky testu: 1. Spusťe program
+             2. Zadejte "1" a stiskněte klávesu 'Enter'
+             3. Stiskněte klávesu 'Enter'
+Očekáváný výsledek:
+Skutečný výsledek: Zobrazí se hláška "Název úkolu nesmí být prázdný.", Program vyzve k zadání nového názvu úkolu
+Stav: Pass
+Poznámky:
+
+TC01
+Popis: Přidání nového úkolu (název: Úkol 1 + prázdný popis)
+Vstupní podmínky: Program zobrazuje funkci Přidat nový úkol.
+Kroky testu: 1. Spusťe program
+             2. Zadejte "1" a stiskněte klávesu 'Enter'
+             3. Zadejte název úkolu "Úkol 1" a stiskněte klávesu 'Enter'
+             4. Stiskněte klávesu 'Enter'
+Očekáváný výsledek: Objeví se hláška "Popis úkolu nesmí být prázdný.", program vyzve k zadání nového popisu úkolu
+Skutečný výsledek: Objeví se hláška "Popis úkolu nesmí být prázdný.", program vyzve k zadání nového popisu úkolu
+Stav: Pass
+Poznámky:
+
+TC01
+Popis: Přidání nového úkolu (prázdný název + popis: Popis pro úkol 1)
+Vstupní podmínky: Program zobrazuje funkci Přidat nový úkol.
+Kroky testu:
+Očekáváný výsledek:
+Skutečný výsledek:
+Stav:
+Poznámky:
+
+TC01
+Popis: Přidání nového úkolu "     "
+Vstupní podmínky: Program zobrazuje funkci Přidat nový úkol.
+Kroky testu:
+Očekáváný výsledek:
+Skutečný výsledek:
+Stav:
+Poznámky:

@@ -1,0 +1,25 @@
+TC 01
+Popis: Výběr neexistující možnosti v hlavním menu
+Vstupní podmínky: Program zobrazuje hlavní menu
+Kroky testu:    1. Spusťte program
+                2. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb
+                3. Zadejte číslo 5 a potvrďte stisknutím klávesy enter
+Očekáváný výsledek: Program ukáže chybovou hlášku "Neplatná volba, zkuste to prosím znovu."
+Skutečný výsledek: Chybová hláška "Neplatná volba, zkuste to prosím znovu." se zobrazila
+Stav: Pass
+Poznámky:
+
+TC 02
+Popis: Zadání prázdného vstupu při výběru možností
+Vstupní podmínky: Oveření, že při zadání prázdného vstupu program vyhodí chybovou hlášku
+Kroky testu: 1. Spusťte program
+             2. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb
+             3. Stiskněte klávesu enter
+Očekáváný výsledek: Program ukáže chybovou hlášku "Neplatná volba, zkuste to prosím znovu."
+Skutečný výsledek: Chybová hláška "Neplatná volba, zkuste to prosím znovu." se zobrazila
+Stav: Pass
+Poznámky:
+
+
+
+

@@ -14,19 +14,19 @@ def hlavni_menu():
             return volba
         
         else:
-            print("Neplatná volba, zkuste to prosím znovu")
+            print("Neplatná volba, zkuste to prosím znovu.")
 
 def pridat_ukol():
     while True:
         nazev = input("Zadejte název úkolu: ").strip()
         if nazev == "":
-            print("Název úkolu nesmí být prázdný")
+            print("Název úkolu nesmí být prázdný.")
         else:
             break
     while True:    
         popis = input("Zadejte popis úkolu: ").strip()
         if popis == "":
-            print("Popis úkolu nesmí být prázdný")
+            print("Popis úkolu nesmí být prázdný.")
         else:
             break
 
@@ -36,11 +36,11 @@ def pridat_ukol():
     }
     ukoly.append(ukol)
     
-    print(f"Úkol '{nazev}' byl přidán")
+    print(f"Úkol '{nazev}' byl přidán.")
 
 def vypis_ukoly():
     if not ukoly:
-        print("\nSeznam úkolů je prázdný")
+        print("\nSeznam úkolů je prázdný.")
         return
     print("\nSeznam úkolů:")
 
@@ -53,7 +53,7 @@ def zobrazit_ukoly():
 
 def odstranit_ukol():
     if not ukoly:
-        print("\nSeznam úkolů je prázdný")
+        print("\nSeznam úkolů je prázdný.")
         return
     
     vypis_ukoly()
