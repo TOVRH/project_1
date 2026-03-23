@@ -51,6 +51,19 @@ Očekáváný výsledek: Program zobrazí: Seznam úkolů:
                                      1. Task #&@ - Description #&@
 Skutečný výsledek: Program zobrazil seznam úkolů a správně přepsal speciální znaky
 Stav: Pass
-Poznámky: Test ověřuje, že po přidání úkolu se správně zobrazí název a popis úkolu s použitím speciálních znaků
+Poznámky: Test ověřuje, že po přidání úkolu se správně zobrazí název a popis úkolu s použitím speciálních znaků.
+
+TC05
+Popis: Zobrazení úkolu s velmi dlouhým názvem (100+ znaků).
+Vstupní podmínky: Program zobrazuje  hlavní menu.
+Kroky testu: 1. Zadejte "1" a potvrďte stisknutím klávesy Enter
+             2.Zadejte název úkolu "aaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAA" a stiskněte klávesu Enter.
+             3. Zadejte popis úkolu "aaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAA" a stiskněte klávesu Enter.
+             4. Zadejte "2" a potvrďte stisknutím klávesy Enter
+Očekávaný výsledek: Program zobrazí: Seznam úkolů:
+                                     1. aaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAA - aaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAAaaaaaaaaaaAAAAAAAAAA
+Skutečný výsledek: Program zobrazil seznam úkolů bez jakékoliv změny textu
+Stav: Pass
+Poznámky: Test ověřuje, zda program správně zpracovává a zobrazuje úkoly s velmi dlouhým názvem bez ořezání nebo chyb.
 
 

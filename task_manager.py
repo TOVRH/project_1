@@ -38,7 +38,7 @@ def pridat_ukol():
     
     print(f"Úkol '{nazev}' byl přidán.")
 
-def vypis_ukoly():
+def zobrazit_ukoly():
     if not ukoly:
         print("\nSeznam úkolů je prázdný.")
         return
@@ -48,15 +48,12 @@ def vypis_ukoly():
         print(f"{index}. {ukol['nazev']} - {ukol['popis']}")
 
 
-def zobrazit_ukoly():
-    vypis_ukoly()
-
 def odstranit_ukol():
     if not ukoly:
         print("\nSeznam úkolů je prázdný.")
         return
     
-    vypis_ukoly()
+    zobrazit_ukoly()
 
     while True:
         try:

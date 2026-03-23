@@ -50,12 +50,32 @@ Popis: Zadání hodnoty s mezerami.
 Vstupní podmínky: Program zobrazuje hlavní menu.
 Kroky testu: 1. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb
              2. Zadejte " 1 " a stiskněte klávesu Enter
-Očekáváný výsledek: Program zobrazí výzvu "Zadejte název úkolu:"
+Očekáváný výsledek: Program přijme vstup jako platnou volbu "1" a zobrazí výzvu "Zadejte název úkolu:"
 Skutečný výsledek: Program zobrazil výzvu "Zadejte název úkolu:"
 Stav: Pass
 Poznámky: Ověření odstranění mezer pomocí .strip().
 
 TC 06
+Popis: Zadání záporné hodnoty
+Vstupní podmínky: Program zobrazuje hlavní menu.
+Kroky testu: 1. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb
+             2. Zadejte " -1 " a stiskněte klávesu Enter
+Očekáváný výsledek: Program ukáže chybovou hlášku "Neplatná volba, zkuste to prosím znovu."
+Skutečný výsledek: Chybová hláška "Neplatná volba, zkuste to prosím znovu." se zobrazila.
+Stav: Pass
+Poznámky: Test chování při záporném vstupu uživatele.
+
+TC 07
+Popis: Zadání desetinného čísla v hlavním menu
+Vstupní podmínky: Program zobrazuje hlavní menu.
+Kroky testu: 1. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb
+             2. Zadejte " 1.0 " a stiskněte klávesu Enter
+Očekáváný výsledek: Program ukáže chybovou hlášku "Neplatná volba, zkuste to prosím znovu."
+Skutečný výsledek: Chybová hláška "Neplatná volba, zkuste to prosím znovu." se zobrazila.
+Stav: Pass
+Poznámky: Test ověřuje, zda program správně validuje zadání desetinného čísla jako neplatné.
+
+TC 08
 Popis: Ukončení programu.
 Vstupní podmínky: Program zobrazuje hlavní menu.
 Kroky testu: 1. Ověřte, že se zobrazuje hlavní menu s nabídkou voleb

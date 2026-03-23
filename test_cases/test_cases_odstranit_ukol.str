@@ -30,18 +30,18 @@ Kroky testu: 1. Zadejte "1" a potvrďte stisknutím klávesy Enter
 Očekáváný výsledek: Program zobrazí hlášku "Seznam úkolů je prázdný."
 Skutečný výsledek: Program zobrazil hlášku "Seznam úkolů je prázdný."
 Stav: Pass
-Poznámky: Test kontroluje, zda se po smazání všech úkolů seznam celý vyprázdní o zobrazí se odpovídající hláška
+Poznámky: Test kontroluje, zda se po smazání všech úkolů seznam celý vyprázdní a zobrazí se odpovídající hláška.
 
-TC01
+TC03
 Popis: Pokus o odstranění úkolu z prázdného seznamu
 Vstupní podmínky: Program zobrazuje hlavní menu
 Kroky testu: 1. Zadejte "3" a potvrďte stisknutím klávesy Enter
 Očekáváný výsledek: Program zobrazí hlášku "Seznam úkolů je prázdný."
 Skutečný výsledek: Program zobrazil hlášku "Seznam úkolů je prázdný."
 Stav: Pass
-Poznámky: Test kontroluje jestli se při pokusu o odstranění úkolu z prázdného seznamu správně zobrazí chybový hláška
+Poznámky: Test kontroluje jestli se při pokusu o odstranění úkolu z prázdného seznamu správně zobrazí chybový hláška.
 
-TC01
+TC04
 Popis: Pokus o odstranění nexistujícího úkolu
 Vstupní podmínky: Program zobrazuje hlavní menu
 Kroky testu: 1. Zadejte "1" a potvrďte stisknutím klávesy Enter
@@ -50,24 +50,6 @@ Kroky testu: 1. Zadejte "1" a potvrďte stisknutím klávesy Enter
              4. Zadejte "3" a potvrďte stisknutím klávesy Enter
              5. Zadejte "2" a potvrďte stisknutím klávesy Enter
 Očekáváný výsledek: Zobrazí se hláška "Zadané číslo úkolu neexistuje, zkuste to znovu." a znovu vyzve k zadání čísla úkolu
-Skutečný výsledek: Hláška se správně zobrazila a program vyzval k zadaní nového čísla úkolu
+Skutečný výsledek: Hláška se správně zobrazila a program vyzval k zadání nového čísla úkolu
 Stav: Pass
-Poznámky: Test kontroluje zda program správně zobrazí chybovou hlášku a vyzve k zadání nového čísla úkolu
-
-TC01
-Popis:
-Vstupní podmínky: Program zobrazuje hlavní menu
-Kroky testu:
-Očekáváný výsledek:
-Skutečný výsledek:
-Stav:
-Poznámky:
-
-TC01
-Popis:
-Vstupní podmínky: Program zobrazuje hlavní menu
-Kroky testu:
-Očekáváný výsledek:
-Skutečný výsledek:
-Stav:
-Poznámky:
+Poznámky: Test kontroluje zda program správně zobrazí chybovou hlášku a vyzve k zadání nového čísla úkolu.
