@@ -1,6 +1,14 @@
-ukoly = []
+from typing import List, Dict
 
-def hlavni_menu():
+ukoly: List[Dict[str, str]] = []
+
+def hlavni_menu() -> str:
+    """
+    Zobrazí hlavní menu a vrátí zvolenou možnost uživatele.
+
+    Returns:
+        str: Zvolená možnost (1-4).
+    """
     while True:
         print("\nSprávce úkolů - hlavní menu")
         print("1. Přidat nový úkol")
@@ -8,51 +16,61 @@ def hlavni_menu():
         print("3. Odstranit úkol")
         print("4. Konec programu")
 
-        volba = input("Vyberte možnost  (1-4): ").strip()
+        volba = input("Vyberte možnost (1-4): ").strip()
 
         if volba in ("1", "2", "3", "4"):
             return volba
-        
         else:
             print("Neplatná volba, zkuste to prosím znovu.")
 
-def pridat_ukol():
+def pridat_ukol() -> None:
+    """
+    Přidá nový úkol do seznamu úkolů.
+    Uživatel zadá název a popis úkolu.
+    """
     while True:
         nazev = input("Zadejte název úkolu: ").strip()
         if nazev == "":
             print("Název úkolu nesmí být prázdný.")
         else:
             break
-    while True:    
+    while True:
         popis = input("Zadejte popis úkolu: ").strip()
         if popis == "":
             print("Popis úkolu nesmí být prázdný.")
         else:
             break
 
-    ukol = {
+    ukol: Dict[str, str] = {
         "nazev": nazev,
         "popis": popis
     }
     ukoly.append(ukol)
-    
+
     print(f"Úkol '{nazev}' byl přidán.")
 
-def zobrazit_ukoly():
+def zobrazit_ukoly() -> None:
+    """
+    Zobrazí všechny úkoly v seznamu.
+    Pokud je seznam prázdný, informuje uživatele.
+    """
     if not ukoly:
         print("\nSeznam úkolů je prázdný.")
         return
     print("\nSeznam úkolů:")
 
-    for index, ukol in enumerate(ukoly,start=1):
+    for index, ukol in enumerate(ukoly, start=1):
         print(f"{index}. {ukol['nazev']} - {ukol['popis']}")
 
-
-def odstranit_ukol():
+def odstranit_ukol() -> None:
+    """
+    Odstraní vybraný úkol ze seznamu.
+    Uživatel zadá číslo úkolu, který chce odstranit.
+    """
     if not ukoly:
         print("\nSeznam úkolů je prázdný.")
         return
-    
+
     zobrazit_ukoly()
 
     while True:
@@ -69,9 +87,10 @@ def odstranit_ukol():
         except ValueError:
             print("Zadejte platné číslo.")
 
-
-
-def main():
+def main() -> None:
+    """
+    Hlavní funkce programu, která řídí chod aplikace.
+    """
     while True:
         volba = hlavni_menu()
 
@@ -84,7 +103,6 @@ def main():
         elif volba == "4":
             print("Konec programu.")
             break
-
 
 if __name__ == "__main__":
     main()
